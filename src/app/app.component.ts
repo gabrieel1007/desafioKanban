@@ -3,6 +3,7 @@ import { Task } from './task/task';
 import { CdkDragDrop, transferArrayItem } from '@angular/cdk/drag-drop';
 import { MatDialog } from '@angular/material/dialog';
 import { TaskDialogResult, TaskDialogComponent } from './task-dialog/task-dialog.component';
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -12,16 +13,23 @@ import { TaskDialogResult, TaskDialogComponent } from './task-dialog/task-dialog
 export class AppComponent {
   todo: Task[] = [
     {
-      title: 'Buy milk',
-      description: 'Go to the store and buy milk',
-    },
-    {
-      title: 'Create a Kanban app',
-      description: 'Using Firebase and Angular create a Kanban app!',
+      title: 'Tarefa 1 - Exemplo',
+      description: 'Clique em Adicionar tarefa para adicionar uma nova',
     },
   ];
-  inProgress: Task[] = [];
-  done: Task[] = [];
+  inProgress: Task[] = [
+    {
+      title: 'Tarefa 2 - Exemplo',
+      description: 'Arraste essa tarefa para o status de Concluído',
+    }
+    
+  ];
+  done: Task[] = [
+    {
+      title: 'Tarefa 3 - Exemplo',
+      description: 'Clique 2 vezes para Editar ou excluir essa tarefa',
+    }
+  ];
 
   constructor(private dialog: MatDialog) {}
 
@@ -35,7 +43,7 @@ export class AppComponent {
     dialogRef
       .afterClosed()
       .subscribe((result: TaskDialogResult) => {
-        if (!result) {
+        if (Object(result.task).length == undefined) {
           return;
         }
         this.todo.push(result.task);
