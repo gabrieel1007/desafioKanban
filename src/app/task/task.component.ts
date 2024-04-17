@@ -7,6 +7,7 @@ import { Task } from './task';
   styleUrl: './task.component.css'
 })
 export class TaskComponent {
+
   @Input() task: Task | null = null;
   @Output() edit = new EventEmitter<Task>();
 }

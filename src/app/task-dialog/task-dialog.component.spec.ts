@@ -1,16 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TaskDialogComponent } from './task-dialog.component';
-import { MatDialog } from '@angular/material/dialog';
-import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { Task } from '../task/task';
 import { MatDialogModule} from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field'; 
 
-describe('TaskDialogComponent', () => {
-  let component: TaskDialogComponent;
-  let fixture: ComponentFixture<TaskDialogComponent>;
+describe('Componente para criar e editar tarefa:', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -23,8 +17,8 @@ describe('TaskDialogComponent', () => {
     })
     .compileComponents();
   });
-  
-  it('should create', () => {
+
+  it('Criar componente de criar ou editar tarefa', () => {
     const fixture = TestBed.createComponent(TaskDialogComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();

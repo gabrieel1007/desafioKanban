@@ -1,9 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TaskComponent } from './task.component';
-import { MatDialog } from '@angular/material/dialog';
 
-describe('TaskComponent', () => {
+describe('Componente que é o card de tarefa:', () => {
   let component: TaskComponent;
   let fixture: ComponentFixture<TaskComponent>;
 
@@ -18,7 +16,7 @@ describe('TaskComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Criar componente de tarefa', () => {
     expect(component).toBeTruthy();
   });
 });
