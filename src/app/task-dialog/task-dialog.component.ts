@@ -8,6 +8,7 @@ import { Task } from '../task/task';
   styleUrl: './task-dialog.component.css'
 })
 export class TaskDialogComponent {
+  title = 'TaskDialog';
   private backupTask: Partial<Task> = { ...this.data.task };
 
   constructor(

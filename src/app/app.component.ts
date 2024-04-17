@@ -11,6 +11,7 @@ import { empty } from 'rxjs';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  title = 'kanban';
   todo: Task[] = [
     {
       title: 'Tarefa 1 - Exemplo',
