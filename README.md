@@ -39,7 +39,6 @@
 ## Respondendo Perguntas
 
 - Queremos te conhecer um pouco melhor, conte um pouco sobre você.
-
 - Onde nasceu/De onde você é? Lugares que estudou, empresas que trabalhou, como você se envolveu com desenvolvimento de software.. enfim, Quem é você?<br>
   Me chamo Gabriel Alves, tenho 21 anos, e atualmente resido em São José do Rio Preto-SP, nasci do sul do país, em Blumenau-SC.<br>
   Já fiz cursos de web design, hardware, hospedagem de sites, e vários outros cursos em plataformas como por exemplo a DIO, que é a que uso atualmente.<br>
