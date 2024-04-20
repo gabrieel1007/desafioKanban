@@ -3,15 +3,17 @@ import { Task } from './task/task';
 import { CdkDragDrop, transferArrayItem } from '@angular/cdk/drag-drop';
 import { MatDialog } from '@angular/material/dialog';
 import { TaskDialogResult, TaskDialogComponent } from './task-dialog/task-dialog.component';
-import { empty } from 'rxjs';
-
+// Componente do app principal da aplicação;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+// Exportando classe do app para ser usadas em outros módulos;
 export class AppComponent {
+  //Title da app usada no teste;
   title = 'kanban';
+  //Criação dos cards de tarefa
   todo: Task[] = [
     {
       title: 'Tarefa 1 - Exemplo',
@@ -36,6 +38,7 @@ export class AppComponent {
   ];
 
   constructor(private dialog: MatDialog) {}
+  // Função para criar uma nova tarefa;
   newTask(): void {
     const dialogRef = this.dialog.open(TaskDialogComponent, {
 
@@ -54,7 +57,7 @@ export class AppComponent {
         this.todo.push(result.task);
       });
   }
-
+  // Função para editar uma tarefa;
   editTask(list: 'done' | 'todo' | 'inProgress', task: Task): void {
     const dialogRef = this.dialog.open(TaskDialogComponent, {
       width: '270px',
@@ -64,11 +67,13 @@ export class AppComponent {
       },
     });
     dialogRef.afterClosed().subscribe((result: TaskDialogResult) => {
+      // Verificar se a resposta foi null;
       if (!result) {
         return;
       }
       const dataList = this[list];
       const taskIndex = dataList.indexOf(task);
+      // Validação para saber se deve excluir ou incluir a tarefa;
       if (result.delete) {
         dataList.splice(taskIndex, 1);
       } else {
@@ -76,11 +81,12 @@ export class AppComponent {
       }
     });
   }
-
+  // Função para mover a tarefa de uma coluna para outra;
   drop(event: CdkDragDrop<Task[]>): void {
     if (event.previousContainer === event.container) {
       return;
     }
+    // Estrutura para alterar a cor do card de tarefa de acordo com a coluna;
     const cardSelecionado = event.previousContainer.data[event.previousIndex];
     const colunaDeDestino = event.container.id;
     if(colunaDeDestino == 'todo'){

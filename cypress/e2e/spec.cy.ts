@@ -1,5 +1,6 @@
 describe('Teste inicial:', () => {
   it('Visita a página inicial', () => {
+    //verifica se contém os elementos quando a pagina é renderizada;
     cy.visit('/')
     cy.contains('Desafio Kanban')
     cy.contains('Adicionar Tarefa');

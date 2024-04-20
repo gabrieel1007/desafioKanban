@@ -12,14 +12,16 @@ import { MatDialogModule} from '@angular/material/dialog';
 import { TaskDialogComponent } from './task-dialog/task-dialog.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
-
+//modulos importados que serão usados na aplicação;
 
 @NgModule({
+  //Components usados na aplicação;
   declarations: [
     AppComponent,
     TaskComponent,
     TaskDialogComponent,
   ],
+  // Modulos usados na aplicação;
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -33,6 +35,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
   ],
   providers: [],
+  // Componente que é inicializado ao iniciar aplicão;
   bootstrap: [AppComponent],
 
 })
