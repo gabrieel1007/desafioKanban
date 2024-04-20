@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     TaskComponent,
-    TaskDialogComponent
+    TaskDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }

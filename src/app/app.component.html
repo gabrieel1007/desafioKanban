@@ -1,16 +1,16 @@
 <mat-toolbar color="primary">
-  <span>Desafio Kanban</span>
+  <span class="title-page">Desafio Kanban</span>
+  <span class="fill-remaining-space"></span>
+  <button class="cor-botao" (click)="newTask()" mat-button>
+     <mat-icon>add</mat-icon><strong>Adicionar Tarefa</strong>
+  </button>
 </mat-toolbar>
 
 <div class="content-wrapper">
-  <button (click)="newTask()" mat-button>
-    <mat-icon>add</mat-icon> Adicionar Tarefa
-  </button>
-
   <div class="container-wrapper">
     <div class="container">
-      <h2>A Fazer</h2>
-  
+      <h1 id="nomeColuna"><strong>A Fazer</strong></h1>
+
       <mat-card
         cdkDropList
         id="todo"
@@ -20,13 +20,13 @@
         (cdkDropListDropped)="drop($event)"
         class="list">
         <p class="empty-label" *ngIf="todo.length === 0">Sem Tarefas</p>
-        <app-task (edit)="editTask('todo', $event)" *ngFor="let task of todo" cdkDrag [task]="task"></app-task>    
+        <app-task (edit)="editTask('todo', $event)" *ngFor="let task of todo" cdkDrag [task]="task"></app-task>
       </mat-card>
     </div>
-  
+
     <div class="container">
-      <h2>Em Progresso</h2>
-  
+      <h1 id="nomeColuna"><strong>Em Progresso</strong></h1>
+
       <mat-card
         cdkDropList
         id="inProgress"
@@ -39,10 +39,10 @@
         <app-task (edit)="editTask('inProgress', $event)" *ngFor="let task of inProgress" cdkDrag [task]="task"></app-task>
       </mat-card>
     </div>
-  
+
     <div class="container">
-      <h2>Concluído</h2>
-  
+      <h1 id="nomeColuna"><strong>Concluído</strong></h1>
+
       <mat-card
         cdkDropList
         id="done"

@@ -9,7 +9,6 @@ describe('Teste inicial:', () => {
     cy.contains('Tarefa 1 - Exemplo');
     cy.contains('Tarefa 2 - Exemplo');
     cy.contains('Tarefa 3 - Exemplo');
-    cy.get('.content-wrapper').contains('button', 'Adicionar Tarefa');
     cy.get('.content-wrapper').should('exist');
     cy.get('mat-icon').should('exist');
     cy.get('mat-card').should('exist');

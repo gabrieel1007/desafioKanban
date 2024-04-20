@@ -21,11 +21,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/kanban",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -145,6 +145,23 @@
               "devServerTarget": "kanban:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "kanban:build:production",
+              "serveTarget": "kanban:serve:production"
+            },
+            "development": {
+              "buildTarget": "kanban:build:development",
+              "serveTarget": "kanban:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
