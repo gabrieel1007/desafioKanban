@@ -56,7 +56,7 @@
   - E alguns princípios de IHC como paleta de cores, formato de icones da tela e facilidade de entendimento do usuário para usar a aplicação.
  
 - Desafios e problemas que você enfrentou e como você resolveu?
-  - Devido ao meu pc não conseguir rodar o servidor usando NestJs, para poder realizar os testes(pois, literalmente meu pc travava), fiz a parte que seria feita no backend no frontend, visualmente falando o resultado é o mesmo, porém subi ele no housting do firebase, pensando em consumir o BD em nuvem deles.
+  - Devido ao meu pc não conseguir rodar o servidor usando NestJs, para poder realizar os testes(pois, não sei o motivo, ele travava) esse foi o maior problema que enfrentei e não consegui solucionar, então, fiz a parte que seria feita no backend no frontend, visualmente falando o resultado é o mesmo, porém subi ele no housting do firebase, pensando em consumir o BD em nuvem deles.
  
 - O que você entende que pode ser melhorado e como fazer isso:
   - Creio que layout, pesquisar por temas e fontes mais agradavéis.<br>
