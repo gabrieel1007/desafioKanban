@@ -42,9 +42,9 @@
 
 - Onde nasceu/De onde você é? Lugares que estudou, empresas que trabalhou, como você se envolveu com desenvolvimento de software.. enfim, Quem é você?<br>
   Me chamo Gabriel Alves, tenho 21 anos, e atualmente resido em São José do Rio Preto-SP, nasci do sul do país, em Blumenau-SC.<br>
-  Já fiz cursos de web design, hardware, hospedagem de sites, e vários outros cursos em plataformas com por exemplo a DIO, que é a que uso atualmente.<br>
-  Atualmente sou estágiario em desenvolimento web na EMPRO, onde já trabalho desde de outubro de 2022, onde participo em todo o processo de desenvolvimento, atuando tanto no frontend, quanto no backend.<br>
-  Estou no penúltimo semestre de Análise e Desenvolvimento de Sistemas na UNIRP, e minha jornada com programação vem desde muito novo, sempre tive afinidade e mais facilidade com area da tecnologia, sempre fui apaixonado por coisas dessa area como video game, jogos, computador, softwares e area de programação foi onde mais me indentifiquei, e gosto muito como a tecnologa pode proporcionar para pessoas muita facilidade, agilidade e simplicidade para tarefas extremamente complicadas.
+  Já fiz cursos de web design, hardware, hospedagem de sites, e vários outros cursos em plataformas como por exemplo a DIO, que é a que uso atualmente.<br>
+  Atualmente sou estágiario em desenvolimento web na EMPRO, onde já trabalho desde outubro de 2022, onde participo em todo o processo de desenvolvimento, atuando tanto no frontend, quanto no backend.<br>
+  Estou no penúltimo semestre de Análise e Desenvolvimento de Sistemas na UNIRP, e minha jornada com programação vem desde muito novo, sempre tive afinidade e mais facilidade com area da tecnologia, sempre fui apaixonado por coisas dessa area como video game, jogos, computador, softwares e a area de programação foi onde mais me indentifiquei, e gosto muito como a tecnologa pode proporcionar para pessoas muita facilidade, agilidade e simplicidade para tarefas extremamente complicadas.
 
 - Qual ferramentas e bibliotecas (libraries, framework, tools etc) você usou?<br>
   - VSCode, NodeJS, Angular, Typescript, HTML, CSS, Firebase, git, angular-material, Jasmine, Karma, Cypress, NPM, Chrome.
